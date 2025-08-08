@@ -1,4 +1,4 @@
-import DwarfBubble from "./DwarfBubble";
+import DwarfBubble from "./components/DwarfBubble";
 
 function App() {
   return (
