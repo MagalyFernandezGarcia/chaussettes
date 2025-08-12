@@ -1,4 +1,4 @@
-import SockCard from "@/components/SockCard";
+import SocksCarousel from "@/components/SocksCarousel";
 import { useState } from "react";
 
 export default function DwarfBubble() {
@@ -9,7 +9,7 @@ export default function DwarfBubble() {
       <div
         className={`absolute inset-0 z-0 p-10 flex flex-col items-center justify-center transition-all duration-500 ease-in-out`}
       >
-        <SockCard />
+        <SocksCarousel />
       </div>
 
       <div
