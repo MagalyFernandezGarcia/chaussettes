@@ -7,19 +7,10 @@ import {
   CarouselNext,
 } from "@/components/ui/carousel";
 import { imagesImport } from "@/getImages";
-import type { SockType } from "@/types/socksType";
-
-import { useEffect, useState } from "react";
+import { socksArray } from "@/db";
 
 export default function SocksCarousel() {
-  const [socks, setSocks] = useState<SockType[]>([]);
-  useEffect(() => {
-    fetch("http://localhost:3000/socks")
-      .then((res) => res.json())
-      .then((data) => setSocks(data));
-  }, []);
-
-  const sockCards = socks.map((sock) => (
+  const sockCards = socksArray.map((sock) => (
     <CarouselItem key={sock.id}>
       <SockCard sockName={sock.name} sockImage={imagesImport[sock.image]} />
     </CarouselItem>

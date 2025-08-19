@@ -1,0 +1,113 @@
+import type { SockType } from "@/types/socksType";
+
+export const socksArray = [
+  {
+    id: 1,
+    name: "Galactic Cat",
+    image: "galacticCat",
+    alive: true,
+  },
+  {
+    id: 2,
+    name: "Crocodile",
+    image: "crocodile",
+    alive: true,
+  },
+  {
+    id: 3,
+    name: "Canyon Lands",
+    image: "np1",
+    alive: true,
+  },
+  {
+    id: 4,
+    name: "Greece Sea",
+    image: "greece",
+    alive: true,
+  },
+  {
+    id: 5,
+    name: "Books",
+    image: "books",
+    alive: true,
+  },
+  {
+    id: 6,
+    name: "Ketchup",
+    image: "ketchup",
+    alive: true,
+  },
+  {
+    id: 7,
+    name: "Olympic mountains",
+    image: "np2",
+    alive: true,
+  },
+  {
+    id: 8,
+    name: "Corgies",
+    image: "corgy",
+    alive: true,
+  },
+  {
+    id: 9,
+    name: "T-rollerosaure Rex",
+    image: "rollers",
+    alive: true,
+  },
+  {
+    id: 10,
+    name: "Fancy as Fuck",
+    image: "flamingoSm",
+    alive: true,
+  },
+
+  {
+    id: 11,
+    name: "Pims and Luna",
+    image: "myCats",
+    alive: true,
+  },
+  {
+    id: 12,
+    name: "Scooby Doo",
+    image: "scooby",
+    alive: true,
+  },
+  {
+    id: 13,
+    name: "Tacosaure",
+    image: "tacosaure",
+    alive: true,
+  },
+  {
+    id: 14,
+    name: "Ye-T-Rex",
+    image: "yetirex",
+    alive: true,
+  },
+  {
+    id: 15,
+    name: "Lamas catus",
+    image: "lamas",
+    alive: true,
+  },
+  {
+    id: 16,
+    name: "Chocolate bar",
+    image: "choco",
+    alive: true,
+  },
+  {
+    id: 17,
+    name: "long flashy flamingos",
+    image: "flamingoLg",
+    alive: true,
+  },
+  {
+    id: 18,
+    name: "Burger",
+    image: "burger",
+    alive: true,
+  },
+] satisfies Array<SockType>;

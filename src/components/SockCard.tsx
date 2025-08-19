@@ -1,4 +1,10 @@
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import {
+  Card,
+  CardContent,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
 
 export default function SockCard({
   sockName,
@@ -13,8 +19,13 @@ export default function SockCard({
         <CardTitle className="text-2xl">{sockName}</CardTitle>
       </CardHeader>
       <CardContent>
-        <img src={sockImage} alt="Chaussette" className="w-100  " />
+        <img
+          src={sockImage}
+          alt="Chaussette"
+          className="w-100 hover:scale-210 "
+        />
       </CardContent>
+      <CardFooter></CardFooter>
     </Card>
   );
 }

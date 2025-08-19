@@ -1,11 +1,19 @@
 import SocksCarousel from "@/components/SocksCarousel";
 import { useState } from "react";
+import { Link } from "react-router";
 
 export default function DwarfBubble() {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div className="relative w-screen h-screen overflow-hidden">
+      {isHovered && (
+        <div className="flex justify-end mr-20 mt-20 z-20 relative gap-4">
+          <Link to="/gallery">Gallery</Link>
+          <Link to="/cemetery">Cemetery</Link>
+        </div>
+      )}
+
       <div
         className={`absolute inset-0 z-0 p-10 flex flex-col items-center justify-center transition-all duration-500 ease-in-out`}
       >
