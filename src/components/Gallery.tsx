@@ -1,14 +1,17 @@
-import { imagesImport } from "@/getImages";
+import DisplayGallery from "@/components/displayGallery";
 import { socksArray } from "@/db";
-
-import SockCard from "@/components/SockCard";
+import { Link } from "react-router";
 
 export default function Gallery() {
+  const aliveSocks = socksArray.filter((sock) => sock.alive === true);
   return (
-    <section className="flex flex-wrap justify-center gap-4 h-screen overflow-y-scroll pt-20 pb-10">
-      {socksArray.map((sock) => (
-        <SockCard sockName={sock.name} sockImage={imagesImport[sock.image]} />
-      ))}
-    </section>
+    <div className="flex flex-col ">
+      <Link to="/" className="pt-20 pl-10">
+        Home
+      </Link>
+      <section className="flex flex-wrap justify-center gap-4 h-screen overflow-y-scroll pt-10 pb-10">
+        <DisplayGallery socksArray={aliveSocks} />
+      </section>
+    </div>
   );
 }
