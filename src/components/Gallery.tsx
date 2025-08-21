@@ -1,4 +1,4 @@
-import DisplayGallery from "@/components/displayGallery";
+import DisplayGallery from "@/components/DisplayGallery";
 import { socksArray } from "@/db";
 import { Link } from "react-router";
 
