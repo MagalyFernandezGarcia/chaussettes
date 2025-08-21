@@ -5,7 +5,7 @@ export const socksArray = [
     id: 1,
     name: "Galactic Cat",
     image: "galacticCat",
-    alive: false,
+    alive: true,
   },
   {
     id: 2,
