@@ -16,7 +16,7 @@ export default function SocksCarousel() {
     </CarouselItem>
   ));
   return (
-    <Carousel className="w-1/2">
+    <Carousel className="w-200">
       <CarouselContent>{sockCards}</CarouselContent>
       <CarouselPrevious />
       <CarouselNext />

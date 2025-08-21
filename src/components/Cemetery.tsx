@@ -13,7 +13,7 @@ export default function Cemetery() {
         {deadSocks.length > 0 ? (
           <DisplayGallery socksArray={deadSocks} />
         ) : (
-          <h1 className="text-4xl text-center    ">All socks are alive ! </h1>
+          <h1 className="text-4xl text-center">All socks are alive ! </h1>
         )}
       </section>
     </div>

@@ -16,7 +16,7 @@ export default function SockCard({
   small?: boolean;
 }) {
   return (
-    <Card className="flex bg-amber-300 items-center">
+    <Card className="flex bg-amber-300 items-center  ">
       <CardHeader className="flex w-full justify-center pb-4">
         <CardTitle className="text-2xl">{sockName}</CardTitle>
       </CardHeader>
